@@ -1,0 +1,84 @@
+@media screen and (min-width: 650px) {
+
+    header,
+    nav,
+    main,
+    footer {
+        margin: 0 2em; /*Side gap*/
+        font-size: 1.2em;
+    }
+
+    header div#my_account_box a:hover {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+
+    header div#my_account_box a {
+        border-radius: 10px;
+    }
+
+    nav ul li {
+        width: 83px;
+        text-align: center;
+        padding: 5px;
+    }
+
+    nav ul li a {
+        padding: 1em 5px 1.5em;
+    }
+
+    nav ul li a:hover {
+        background-color: #FFFFFF;
+        color: #DE2226;
+    }
+
+    nav a.selected {
+        background-color: #FFFFFF;
+        color: #DE2226
+    }
+
+    div.hero_text {
+        padding: 1em;
+        background-color: unset;
+        justify-self: right;
+        width: 75%;
+    }
+
+    div.hero_text ul:last-child {
+        width: 80%;
+    }
+
+    main article {
+        grid-area: 3/2/4/3;
+    }
+
+    main aside {
+        grid-area: 3/1/4/2;
+    }
+
+    div.recipes ul li {
+        width: 80%;
+    }
+
+    div.recipes picture {
+        padding: 0 1.5em;
+    }
+
+    main form {
+        margin-bottom: 0;
+    }
+
+    main fieldset {
+        border: none;
+        max-width: 70%;
+    }
+
+    div.abutton a {
+        padding: 1em 2em;
+    }
+
+    footer div#rights p {
+        font-size: .8em;
+    }
+    
+}

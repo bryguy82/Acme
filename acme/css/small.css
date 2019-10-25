@@ -1,0 +1,301 @@
+html {
+    height: 100%;
+}
+
+html,
+body p {
+    margin: 0;
+}
+
+main h1,
+main h2,
+main h3 {
+    margin: 0;
+    padding: .5em .2em;
+}
+
+main button {
+    padding: 0;
+}
+
+/*Page Grid Settings*/
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+div.hero_title {
+    grid-area: 1/1/2/3;
+}
+
+div.hero {
+    grid-area: 2/1/3/3;
+}
+
+article {
+    grid-area: 3/1/4/3;
+}
+
+aside {
+    grid-area: 4/1/5/3;
+    text-align: center;
+}
+
+main form {
+    display: grid;
+}
+
+/*Font*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header p,
+body h1,
+body h2,
+body h3,
+body p,
+body input,
+body a,
+body label {
+    font-family: 'Acme', sans-serif;
+}
+
+body div.body {
+    height: 100%;
+}
+
+/*Background image*/
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/site/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/*All body child attributes*/
+header,
+nav,
+main,
+footer {
+    margin: 0 1em;
+    /*Side gap*/
+    font-size: .9em;
+    background-color: #FFFFFF;
+}
+
+/*Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header div#acme_image {
+    padding: .5em;
+}
+
+header div#acme_image img {
+    max-width: 8em;
+}
+
+header div#my_account_box {
+    display: flex;
+}
+
+header div#my_account_box a {
+    display: inline-flex;
+    align-self: center;
+    padding: 5px;
+    height: 30px;
+    text-decoration: none;
+}
+
+header div#my_account_box div img {
+    max-width: 2em;
+}
+
+header div#my_account_box div#account {
+    padding: .5em;
+}
+
+/* header div#my_account_box a:link, */
+header div#my_account_box a:active,
+header div#my_account_box a:visited {
+    color: #000000;
+}
+
+/*Navigation*/
+nav {
+    background-color: #DE2226;
+    padding: .1em 0;
+}
+
+nav a,
+nav a:visited {
+    color: #FFFFFF;
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: .5em 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 1.5em 5px;
+}
+
+/*Main*/
+div.hero {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+
+div.hero_img {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+div.hero_text {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: rgb(255, 255, 255, .5);
+    color: #990033;
+}
+
+div.hero_text ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+div.hero_text ul li {
+    padding: 0 .1em .2em;
+}
+
+div.hero img {
+    width: 100%;
+}
+
+div.recipes ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+div.recipes ul li {
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+    align-items: center;
+    width: 170px;
+}
+
+div.recipes picture {
+    align-self: center;
+    background-color: rgb(128, 128, 128, .3);
+    padding: 0 3em;
+}
+/*Login form*/
+/* sdfsdfasdfasdfasdfasdfasdfasdfsdfdffsadfasdf */
+
+
+main fieldset {
+    display: grid;
+}
+
+main form {
+    margin-bottom: 1em;
+}
+
+main fieldset {
+    border: 5px solid #DE2226;
+    border-radius: 10px;
+}
+
+div.error_message {
+    grid-area: 2/1/3/3;
+    padding: .5em;
+}
+
+form.login {
+    grid-area: 3/1/4/3;
+    /* grid-area: 2/1/3/3; */
+}
+
+form.login p,
+div.login p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+form.login input {
+    height: 48px;
+    width: 100%;
+    border: 2px solid #808080;
+    border-radius: 10px;
+}
+
+div.login_button input {
+    width: 100%;
+    margin: 1em 0;
+    height: 48px;
+    background-color: #DE2226;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px #808080;
+}
+
+div.login_button a {
+    padding: .5em 45% .5em 45%;
+}
+
+div.register {
+    grid-area: 4/1/5/3;
+    padding: 1em 0 0 1em;
+}
+
+div.abutton {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 48px;
+    max-width: fit-content;
+    font-size: 17px;
+    margin: 0 0 1em;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, .5);
+    box-shadow: 0px 5px 5px #808080;
+}
+
+div.abutton a {
+    padding: 1em 1em;
+}
+
+div.login_button input a:link,
+div.login_button input a:active,
+div.login_button input a:visited,
+div.register div.abutton a:link,
+div.register div.abutton a:active,
+div.register div.abutton a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    padding: 0 .5em;
+}
+
+footer div#rights {
+    border-top: solid;
+    padding: .5em;
+}
